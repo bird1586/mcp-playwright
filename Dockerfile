@@ -3,4 +3,4 @@ WORKDIR /app
 RUN npm install -g @playwright/mcp
 RUN npx playwright install chrome
 EXPOSE 8080
-CMD ["npx", "@playwright/mcp", "--port", "8080", "--isolated"]
+CMD ["npx", "@playwright/mcp", "--port", "8080", "--isolated", "--no-sandbox"]
